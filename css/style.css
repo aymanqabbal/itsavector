@@ -1,0 +1,480 @@
+/* import fonts  */
+@import url(/css/fonts.css);
+/* import css variables */
+@import url(/partials/variables.css);
+/* global styling ie classes */
+@import url(/partials/_global.css);
+/* ---------------------nav start----------------  */
+body {
+  min-height: 500vh;
+}
+body{
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    position: relative;
+    background-color: black;
+}
+main{
+    position: relative;
+}
+/* navbar styling  */
+
+/* aligning nav items to right coz it did'nt work with mr-auto class fix it later  */
+.mr-auto{
+    /* margin-left: auto ; */
+}
+.header-area .main-menu .navbar{
+    height: 3.2rem;
+    padding: 00.5rem 10rem;
+}
+.header-area .main-menu .nav-item .nav-link {
+    /* it specifies the font family font font-weight and font height :  */
+    font: normal 500 1rem var(--roboto);;
+    text-transform: uppercase;
+    padding-inline: 1.7rem;
+    color: var(--title-color);
+}
+#logo-img img{
+    /* margin-top: 6; */
+    /* background-color: antiquewhite; */
+}
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+.navbar-nav a:hover, .navbar-nav .active{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.main-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* ----------------------nav end----------------  */
+/* ----------------------section start----------------  */
+.site-banner{
+    /* background-color: antiquewhite; */
+    /* display: none; */
+    padding: 8em 5rem;
+}
+.vector-art{
+    width: 496px;
+    font-weight: 500;
+    margin-inline: 48px;
+}
+.site-title h3{
+    padding-top: 30%;
+}
+.site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left:5%;
+    transform: translate(-10px);
+}
+.site-title h1{
+    font-size: 5rem;
+}
+.site-title h4{
+    font-size: 1.5rem;
+}
+/* .site-main .site-banner .banner-image>img{
+    padding: 7rem 0;
+    width: 90rem;
+} */
+#itsavector{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* ----------------------slide show start----------------  */
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+}
+/* ----------------------slide animation----------------  */
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 0px;}
+    30% {left: 560px;}
+    40% {left: 560px;}
+    50% {left: 1120px;}
+    60% {left: 1120px;}
+    70% {left: 560px;}
+    80% {left: 560px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+.slide-images{
+    padding-top: 2rem;
+    width: 3680px;
+    height: 80px;
+    margin: 0 0 0 -1136px;
+    position: relative;
+    -webkit-animation-name: slide_animation ;
+    -webkit-animation-duration: 25s ;
+    -webkit-animation-iteration-count: infinite ;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/* preventing chaos from happening + specifyin height */
+.slide-show{
+    overflow: hidden;
+    max-height: 550px;
+}
+
+/* ----------------------slide show end----------------  */
+/* ----------------------about me start----------------  */
+.site-main .about-area .about-image img{
+    width: 32rem;
+}
+.site-main .about-area{
+    padding: 10em 5rem;
+}
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+.site-main .about-area .about-title .paragraph > p{
+    padding: 0.5rem 0;
+}
+
+/* ----------------------about me end----------------  */
+/* ----------------------services start----------------  */
+.services-img img{
+    width: 5.5rem;
+}
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253,0.973 );
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+     
+}
+/* ----------------------services end----------------  */
+
+
+/* ----------------------gallery start----------------  */
+.gallery-btn{
+    padding: 1rem 8rem;
+}
+.gallery-container{
+    padding: 10em 5rem;
+    max-width: 70rem;
+}
+.gallery-item a img{
+    transition: 0.3s ease;
+}
+.gallery-item a img:hover{
+    /* transition: 0.3s ease; */
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.gallery-item {
+    position: relative;
+}
+/* body{
+    background-image: url(/images/gallery/joji\ nectar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* ----------------------gallery end----------------  */
+/* ----------------------section end----------------  */
+/* ----------------------resume start----------------  */
+.cv-info .container, .cv-education .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------------------resume end----------------  */
+/* ----------------------skills start----------------  */
+.skills-area{
+    padding: 10em 5rem;
+}
+.skills-area .bar{
+    padding: 1rem 0;
+}
+.skills-container .bar .info{
+    opacity: 0;
+    animation: showText 0.5s 0.4s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skills-container{
+    margin-top: 0;
+}
+.skills-container .bar .progress-line{
+    background: rgba(248, 252, 253,0.973 );
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+    0 1px rgba(255,255,255,0.8);
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 0.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+.skills-container .bar .progress-line span{
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1.3s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.skills-area{
+    height: 50rem;
+    /* padding-bottom: 100rem; */
+}
+/* it's set to display none for the animation using js */
+.skills-container{
+    /* display: none; */
+    transition: 0.5s ease;
+}
+/* providing more responsivnesss  */
+.bar-container{
+    padding-bottom: 1.5rem;
+}
+.progress-line{
+    margin-top: 1.5rem;
+}
+    .info h4{
+        margin-top: 1.5rem;
+    }
+/* providing more responsivnesss  */
+.bar .progress-line span{
+    position: absolute;
+    border-radius: 20px;
+    background: var(--gradient-color);
+    height: 100%;
+    width: 100%;
+}
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: white;
+    color: black;
+    opacity: 0;
+    animation: showText2 1.2s 1.5s linear forwards;
+}
+.progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: white;
+    color: black;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 1.2s 1s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+/* diffirent pop ups / tooltips */
+.progress-line.design span::after{
+    content: "90%";
+}
+.progress-line.photoshop span::after{
+    content: "75%";
+}
+.progress-line.procreate span::after{
+    content: "75%";
+}
+.progress-line.illustrator span::after{
+    content: "80%";
+}
+/* diffirent progress bars */
+.bar .progress-line.procreate span{
+    width: 80%;
+}
+.bar .progress-line.illustrator span{
+    width: 75%;
+}
+.bar .progress-line.design span{
+    width: 90%;
+}
+.bar .progress-line.photoshop span{
+    width: 75%;
+}
+.bar.row:hover{
+    border-radius: 10rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s ease;
+}
+/* ----------------------skills end----------------  */
+
+/* ----------------------contact start----------------  */
+section.contact{
+    padding: 8em 5rem;
+}
+.contact-img img{
+    width: 32rem;
+}
+#contact{
+    font-family: var(--roboto);
+}
+.form-control{
+    border-radius: 8px;
+}
+/* ----------------------contact end----------------  */
+/* ----------------------footer start----------------  */
+footer{
+    margin-top: 5rem;
+    font-family: var(--roboto);
+    position: relative;
+    width: 100%;
+    background: #6735ff;
+    min-height: 100px;
+    padding: 20px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icons, footer .menu{
+    z-index: 1200;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+footer .social_icons li,footer .menu li{
+    list-style: none;
+}
+footer .social_icons li a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icons li a:hover{
+    transform: translateY(-10px);
+
+}
+footer .menu li a{
+    z-index: 1200;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/wave.png);
+    background-size: 1000px 100px;
+    /* background-repeat: no-repeat; */
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 1000;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2 {
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+
+
+
+/* ----------------------footer end----------------  */

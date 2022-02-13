@@ -1,0 +1,364 @@
+@media only screen and (max-width: 390px){
+    #itsavector{
+        font-size: 2rem;
+    }
+    .site-buttons button , .site-buttons a{
+        display: flex;
+        margin: 0.5rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .site-banner{
+        color: white;
+        background: url(/images/gallery/joji\ nectar.png);
+        background-repeat: no-repeat;
+        background-size: 40rem !important;
+        background-color: black !important;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    /* background animation adjustments */
+    .site-banner{
+        animation: bg_animation 15s ease infinite !important;
+    }
+    .resume-area .container{
+        padding: 0 !important;
+    }
+    .resume-light{
+        padding: 0 !important;
+    }
+    section.contact{
+        padding: 0;
+    }
+    .slide-images{
+        display: none;
+    }
+    .about-title .paragraph{
+        padding-inline: 0 !important;
+    }
+    .site-main .services-area{
+        padding: 0;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+    .site-main .about-area{
+        padding: 0;
+    }
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 15rem    !important;
+    }
+    
+    .site-main > .services-area .services{
+        width: 13rem;
+    }
+    section{
+        padding: 0;
+        margin-block: 10rem !important;
+    }
+    section:last-of-type,section:first-of-type{
+        margin-block: 0 !important;
+    }
+    .services-container{
+        display: flex;
+        justify-content: center;
+    }
+    .services{
+        margin: 1rem !important;
+        width: 100%;
+    }
+    .about-area a{
+        margin:auto;
+    }
+    .about-button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .about-title h2{
+        font-size: 1px;
+        padding: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    .site-main .about-area .about-title h2 > span {
+        letter-spacing: 0;
+        padding: 0;
+        font: normal bold 2rem/4rem var(--roboto);
+        
+    }
+    .paragraph{
+        text-align: center;
+        margin: auto;
+        width: 200%;
+    }
+
+    .site-banner{
+        color: white;
+        background: url(/images/gallery/joji\ nectar.png);
+        background-repeat: no-repeat;
+        background-size: 50rem;
+        padding-bottom: 10rem ;
+    }
+    #itsavector{
+        text-shadow: 3px 3px 7px #cecece65;
+    }
+    .site-title h3::after{
+        background: white;
+    }
+    .site-banner,.about-area{
+        margin-top: 50%; 
+    }
+    .contact .button-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* if the viewport is equal to 978px or less than that */ 
+
+@media (max-width: 978px) {
+    /* nav bar adjustments */
+    .header-area .main-menu .navbar{
+        padding: 0 1rem;
+    }
+    .navbar-collapse{
+        background-color: #fff;
+    }
+    
+    .nav-link{
+        color: #3586ff !important;
+    }
+
+    .about-area a{
+        margin:auto;
+    }
+    .about-button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .about-title h2{
+        font-size: 1px;
+        padding: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    .site-main .about-area .about-title h2 > span {
+        letter-spacing: 0;
+        padding: 0;
+        font: normal bold 2rem/4rem var(--roboto);
+        
+    }
+    .paragraph{
+        text-align: center;
+        margin: auto;
+        width: 200%;
+    }
+
+    section{
+        padding: 0;
+        margin-block: 10rem !important;
+    }
+    section:last-of-type,section:first-of-type{
+        margin-block: 0 !important;
+    }
+    .site-banner{
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden;
+    }
+    .site-title{
+        max-width: 22rem;
+    }
+    .slide-show{
+        max-width: 20rem;
+    }
+    .site-title h3{
+        font-size: 2rem !important;
+    }
+    .site-title h1{
+        font-size: 3.5rem !important;
+    }
+    .site-banner .container{
+        margin: 0;
+    }
+    .slide-show{
+        min-width: 28rem !important;
+    }
+    /* slide show adjustements start */
+    
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 0px;}
+        30% {left: 530px;}
+        40% {left: 530px;}
+        50% {left: 1120px;}
+        60% {left: 1120px;}
+        70% {left: 530px;}
+        80% {left: 530px;}
+        90% {left: 0px;}
+        100% {left: 0px;}
+    }
+    .site-banner{
+        padding-top: 10rem !important;
+    }
+    .slide-images{
+        margin: 0 0 0 -1210px;
+
+    }
+        /* slide show adjustements end */
+    .container {
+      padding:0;
+      margin:0;
+    }
+    
+    body {
+        padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+/* if the viewport is equal to 792px or less than that */ 
+@media only screen and (max-width: 792px){
+    /* background animation  */
+    @keyframes bg_animation {
+        0%{
+            background-position-x:15rem ;
+        }
+        50%{
+            background-position-x:-15rem ;
+            
+        }
+        100%{
+            background-position-x:15rem ;
+            
+        }
+    } 
+
+
+
+    .site-banner{
+        color: white;
+        background: url(/images/gallery/joji\ nectar.png);
+        background-repeat: no-repeat;
+        background-size: 50rem;
+        padding-bottom: 10rem !important;
+        background-color: black;
+        animation: bg_animation 25s ease infinite;
+    }
+    .site-banner{
+        background-position-x: -15rem;
+    }
+    #itsavector{
+        text-shadow: 3px 3px 7px #cecece65;
+    }
+    .site-title h3::after{
+        background: white;
+    }
+    .slide-show{
+        display: none;
+    }
+    #itsavector{
+        text-shadow: 3px 3px 7px #cecece65;
+    }
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,p, h4,span,h2,
+    .site-main, .resume-dark,.resume-light,.services-area,.resume-area,.contact ,.about-area ,.site-banner
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+    .paragraph{
+        text-align: center;
+        margin: auto;
+        width: 200%;
+    }
+    .about-area a{
+        margin:auto;
+    }
+    .about-button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .about-title h2{
+        font-size: 1px;
+        padding: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    .services-container{
+        display: flex;
+        justify-content: center;        
+    }
+
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+    .contact-img img{
+        display: none;
+    }
+    .resume-area .container{
+        padding: 0 !important;
+        /* margin: 0; */
+    }
+    .resume-dark{
+        padding: 4rem !important;
+    }
+    
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+    @media only screen and (max-width: 1315px){
+        /* slide show adjustements start */
+    
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 0px;}
+        30% {left: 540px;}
+        40% {left: 540px;}
+        50% {left: 1120px;}
+        60% {left: 1120px;}
+        70% {left: 540px;}
+        80% {left: 540px;}
+        90% {left: 0px;}
+        100% {left: 0px;}
+    }
+    .site-banner{
+        padding-top: 10rem !important;
+    }
+    .slide-images{
+        margin: 0 0 0 -1200px;
+    }
+        /* slide show adjustements end */
+    }
+
+
+}

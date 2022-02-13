@@ -1,0 +1,24 @@
+make a slide show for the primary photo aka sneako
+
+make a portfolio page where you put a grid of artworks with bootstrap
+
+.container over-flow: hidden to make slid show responsive for mobile maybe 
+essentially make a single page and when you click a link it should scroll to the part/section of the page wanted and also the active thing should change and idk how to make it without using javascipt
+
+add some vedios in the gallery
+
+when you hover on ayman.png the img changes from full portrait to a simple line art or vice versa
+
+add skills/ tools/ languages spoken page 
+
+add icons to the progress bars and possibly also for the languages
+
+add animation activated by scrolling
+
+make skills languages in a carousel
+
+add a carousel that contains services like full body half body line art etc
+
+clean up the html and the functionality 
+
+make the dark theme ie change them for no reason
